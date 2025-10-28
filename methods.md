@@ -12,10 +12,10 @@ Each sector’s aggregated performance was computed using **weighted averages by
 ## 2. Data Preparation
 
 ### 2.1 Source
-Each Excel file contains one sheet per company, including variables such as stock price, returns, and market capitalization.
+The csv file contains the data of all companies, including variables such as stock price, returns, and market capitalization, with a column to specify to which sector it belongs.
 
 ### 2.2 Grouping by Sector
-Companies were grouped by their economic sector (e.g., Technology, Energy, Finance, etc.).
+Companies were grouped by their economic sector (e.g., automotive semiconductors, automotive, IC Design, etc.).
 
 For each sector \( s \) at time \( t \), a **weighted average** was computed as:
 
@@ -113,8 +113,3 @@ If including past values of \( X_t \) significantly improves prediction of \( Y_
   - Cross-correlation: `numpy.correlate` or `statsmodels.tsa.stattools.ccf`
 
 ---
-
-## 9. References
-
-- Granger, C. W. J. (1969). *Investigating Causal Relations by Econometric Models and Cross-spectral Methods*. Econometrica, 37(3), 424–438.  
-- Dickey, D. A., & Fuller, W. A. (1979). *Distribution of the Estimators for Autoregressive Time Series with a Unit Root*. JASA, 74(366), 427–431.
